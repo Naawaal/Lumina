@@ -1,59 +1,57 @@
 # ----------------------------
-# .gitignore — categorized
+# .gitignore — Python project
 # ----------------------------
 
-# OS generated files
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Virtualenvs
+.venv/
+venv/
+ENV/
+env/
+
+# dotenv and local env overrides
+.env
+.env.*
+.env.local
+
+# Pytest
+.pytest_cache/
+
+# MyPy / caches
+.mypy_cache/
+.cache/
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# OS files
 .DS_Store
 Thumbs.db
 Desktop.ini
 
 # Logs
 *.log
-npm-debug.log*
-yarn-error.log*
 
-# Environment files
-# dotenv and local overrides
-.env
-.env/
-.env.local
-.env.*.local
-
-# Editor / IDE
-.vscode/
-.idea/
-
-# Node modules and build artifacts
-node_modules/
-dist/
-build/
-
-# Python artifacts
-# bytecode, caches, virtualenvs, packaging
-*.pyc
-*.pyo
-*.pyd
-__pycache__/
-venv/
-.venv/
-pip-wheel-metadata/
-*.egg-info/
-
-# Databases
-*.sqlite3
-*.db
-
-# Testing & coverage
+# Coverage
 .coverage
 coverage.xml
 htmlcov/
-.pytest_cache/
-.tox/
-.nox/
 
-# Type checking / caches
-.mypy_cache/
-.cache/
-
-# Tooling / misc
+# Other
+*.sqlite3
+*.db
 .traycer/
